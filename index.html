@@ -482,6 +482,9 @@
   document.getElementById('openBtn').addEventListener('click', function(){
     document.getElementById('cover').classList.add('opened');
     document.body.style.overflow = 'auto';
+    bgAudio.play();
+    musicBtn.classList.remove('paused');
+    isPlaying = true;
   });
   document.body.style.overflow = 'hidden';
   setTimeout(function(){
